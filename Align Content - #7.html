@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: grey;
+            padding: 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 2.5px solid black;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+        
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align Content</h1>
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 22</div>
+        <div class="item">Teste 333</div>
+        <div class="item">Teste 4444</div>
+        <div class="item">Teste 55555</div>
+        <div class="item">Teste 666666</div>
+        <div class="item">Teste 7777777</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 22</div>
+        <div class="item">Teste 333</div>
+        <div class="item">Teste 4444</div>
+        <div class="item">Teste 55555</div>
+        <div class="item">Teste 666666</div>
+        <div class="item">Teste 7777777</div>
+    </div>
+
+    <p>Flex Start</p>
+    <div class="container flex-start">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 22</div>
+        <div class="item">Teste 333</div>
+        <div class="item">Teste 4444</div>
+        <div class="item">Teste 55555</div>
+        <div class="item">Teste 666666</div>
+        <div class="item">Teste 7777777</div>
+    </div>
+
+    <p>Flex End</p>
+    <div class="container flex-end">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 22</div>
+        <div class="item">Teste 333</div>
+        <div class="item">Teste 4444</div>
+        <div class="item">Teste 55555</div>
+        <div class="item">Teste 666666</div>
+        <div class="item">Teste 7777777</div>
+    </div>
+
+    <p>Space Between</p>
+    <div class="container space-between">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 22</div>
+        <div class="item">Teste 333</div>
+        <div class="item">Teste 4444</div>
+        <div class="item">Teste 55555</div>
+        <div class="item">Teste 666666</div>
+        <div class="item">Teste 7777777</div>
+    </div>
+
+    <p>Space Between</p>
+    <div class="container space-around">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 22</div>
+        <div class="item">Teste 333</div>
+        <div class="item">Teste 4444</div>
+        <div class="item">Teste 55555</div>
+        <div class="item">Teste 666666</div>
+        <div class="item">Teste 7777777</div>
+    </div>
+</body>
+</html>
